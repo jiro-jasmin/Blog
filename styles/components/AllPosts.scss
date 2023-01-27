@@ -1,0 +1,42 @@
+button {
+    &:disabled {
+        display: none;
+    }
+
+    &:first-child {
+        margin-right: 1em;
+    }
+
+    cursor: pointer;
+    padding: .5em;
+    overflow: hidden;
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    background-color: $light-purple;
+    color: #fff;
+
+    transition: background-color .4s;
+
+    &:hover,
+    &:focus {
+        background-color: $light-hover;
+    }
+
+    .dark {
+        background-color: $light-hover;
+    
+        &:hover,
+        &:focus {
+            background-color: $dark-hover;
+        }
+    }
+
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}

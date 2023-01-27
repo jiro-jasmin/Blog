@@ -1,0 +1,20 @@
+// Main colors
+$light-purple: #d6a3fb;
+$light-hover: #c78cf7;
+$dark-purple: #8f8cf7;
+$dark-grey: #808080;
+
+// Dark theme
+$dark-bg1: #121212;
+$dark-bg2: #3e3643;
+$dark-bg3: #5f5564;
+$dark-hover: #a66dd5;
+$dark-text: #ebedec;
+$light-grey: #b3b3b3;
+
+@font-face {
+    font-family: 'Format_1452';
+    src: url('../public/fonts/Format_1452.woff') format('woff'), url('../public/fonts/Format_1452.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}

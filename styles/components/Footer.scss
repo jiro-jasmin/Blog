@@ -1,0 +1,21 @@
+footer {
+    color: $dark-grey;
+    text-align: center;
+    padding: 2em 0 1em 0;
+    margin: 0;
+
+    a {
+        transition: color .3s;
+    }
+
+    a:hover {
+        color: $dark-hover;
+        transition: color .3s;
+    }
+}
+
+.dark {
+    small {
+        color: $light-grey;
+    }
+}

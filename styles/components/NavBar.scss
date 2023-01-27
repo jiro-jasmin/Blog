@@ -1,0 +1,96 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    background-color: #fff;
+    z-index: 10;
+
+    ul {
+        color: $light-purple;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+
+    // Header logo
+
+    .title {
+        font-family: 'Format_1452', Roboto, Ubuntu, 'Open Sans', sans-serif;
+        font-size: 1.8em;
+        background: linear-gradient(to bottom, $light-purple, $dark-purple);
+        background: -webkit-linear-gradient(to bottom, $light-purple, $dark-purple);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-top: 8px;
+
+
+        &:hover {
+            background: linear-gradient(to right, $light-hover, #79a4ff, #f38dfa, #f793c0, $light-purple, $dark-purple);
+            background-size: 400% 400%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient 12s ease infinite;
+        }
+
+        @media screen and (min-width: 768px) {
+            font-size: 2.5em;
+        }
+    }
+
+    a {
+        &:hover {
+            color: $light-hover;
+            transition: color .3s;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        &:before {
+            content: '';
+            background: black;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            transition: all .6s ease;
+            width: 100vw;
+            height: 0%;
+            overflow: hidden;
+        }
+    
+        &:hover::before {
+            height: 200%;
+        }
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.dark .navBar {
+    background-color: $dark-bg1;
+
+    &:before {
+        background: $dark-bg2;
+    }
+
+}

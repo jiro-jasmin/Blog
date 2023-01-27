@@ -1,0 +1,42 @@
+.postPreview {
+    margin: 1.7em 0;
+    padding: 1em;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: box-shadow 0.4s cubic-bezier(.25,.8,.25,1);
+
+    &:hover {
+        box-shadow: 0 7px 14px rgba(0,0,0,0.18), 0 7px 7px rgba(0,0,0,0.18);
+        transition: box-shadow 0.4s cubic-bezier(.25,.8,.25,1);
+
+    }
+
+    h3 {
+        margin: unset;
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 150px;
+        margin: 15px 0;
+    }
+    
+    p {
+        margin: 0;
+    }
+}
+
+.dark .postPreview{
+    background-color: $dark-bg2;
+    transition: background-color 0.4s ease;
+    box-shadow: unset;
+
+    &:hover {
+        background-color: $dark-bg3;
+        box-shadow: unset;
+        transition: background-color 0.4s ease;
+
+    }
+}
