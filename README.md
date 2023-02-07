@@ -13,7 +13,7 @@ This project is made with the headless CMS *Strapi*, which offers a custom admin
    
 Alternatively, click here to watch a video demo:  
  
-[![CLICK HERE FOR VIDEO DEMO](https://img.youtube.com/vi/y5jZ0fF9Zq4/0.jpg)](https://youtu.be/y5jZ0fF9Zq4)
+[![CLICK HERE FOR VIDEO DEMO](https://img.youtube.com/vi/pqqSpC_XyhI/0.jpg)](https://youtu.be/pqqSpC_XyhI)
   
 ---
   
